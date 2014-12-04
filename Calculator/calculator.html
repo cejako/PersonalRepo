@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>考勤时间计算器</title>
+	<link rel="stylesheet" type="text/css" href="calculator.css">
+	<script type="text/javascript" src="jquery-2.1.1.js"></script>
+	<script type="text/javascript" src="calculator.js"></script>
+</head>
+<body>
+	<div id="container">
+		<textarea id="htmlRecieved"></textarea>
+		<div id="conditionContainer">
+			<div class="select">
+				<select>
+					<option value='0'>本月</option>
+					<option value='-1'>上月</option>
+				</select>
+			</div>
+			<div class="btn">
+				<button class="button" onclick="cal();">Calculate</button>
+			</div>
+		</div>
+		<table id='result' border="1" cellpadding="0" cellspacing="0" width="100%">
+			<tr>
+				<th align="center" scope="col" style="font-weight:bold;">
+					当月总天数(d)
+				</th>
+				<th align="center" scope="col" style="font-weight:bold;">
+					出勤总时间(h)
+				</th>
+				<th align="center" scope="col" style="font-weight:bold;">
+					出勤总天数(d)
+				</th>
+				<th align="center" scope="col" style="font-weight:bold;">
+					超出时间(h)
+				</th>
+			</tr>
+		</table>
+	</div>
+	<div class="layer"></div>
+	<div class="loading">
+		<img src="loading.gif"/>
+	</div>
+</body>
+</html>

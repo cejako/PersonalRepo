@@ -1,0 +1,47 @@
+body{
+	margin: 0;
+}
+#container{
+	width:500px;
+	margin: 5px auto;
+}
+#htmlRecieved{
+	display: block;
+	width: 100%;
+	height:300px;
+}
+.select{
+	display: inline-block;
+	text-align: center;
+	width: 20%;
+}
+.btn{
+	display: inline-block;
+	text-align: center;
+	width: 75%;
+}
+.button{
+	display: block;
+	width: 100%;
+	margin: 10px 0;
+	padding: 8px;
+}
+.layer{
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 100;
+}
+.loading{
+	display: none;
+	position: absolute;
+	width: 100%;
+	top: 40%;
+	left: 0;
+	text-align: center;
+	z-index: 101;
+}
